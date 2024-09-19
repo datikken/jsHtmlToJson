@@ -7,6 +7,8 @@
     <list default="true" id="9c9f65d6-a99c-4388-b661-71d7f985d420" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/treeHTML.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/treeYXmlElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/treeYXmlElement.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +22,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -44,7 +47,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/datikken/Documents/awesome-docker/src/htmlToYjsDoc",
+    "last_opened_file_path": "/home/datikken/Documents/awesome-docker/src/htmlToYjsDocTS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -73,7 +76,8 @@
       <workItem from="1726663447160" duration="9703000" />
       <workItem from="1726676160158" duration="9849000" />
       <workItem from="1726740513569" duration="6097000" />
-      <workItem from="1726750227669" duration="308000" />
+      <workItem from="1726750227669" duration="476000" />
+      <workItem from="1726756680333" duration="1128000" />
     </task>
     <servers />
   </component>

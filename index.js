@@ -1,14 +1,9 @@
 import { DOMParser } from '@xmldom/xmldom';
-import { treeHTML} from "./treeHTML.js";
 import { treeYxml } from "./treeYXmlElement.js";
 import * as Y from 'yjs';
 import {insertYXmlElementToYdoc} from "./helpers.js";
 
-const treeObject = {};
-
-const doc = new Y.Doc();
 const docname = 'test';
-const yxmlfragment = doc.get(docname, Y.XmlFragment);
 const wrapxmlel = new Y.XmlElement('div');
 
 async function HTMLParser(element) {

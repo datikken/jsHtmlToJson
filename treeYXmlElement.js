@@ -1,10 +1,6 @@
 import * as Y from 'yjs';
 
 export const treeYxml = (element, object) => {
-    // console.log(object)
-    // console.log("\n")
-    // return
-    // object.type = element.nodeName;
     const nodeList = element.childNodes;
     if (nodeList !== null) {
         if (nodeList.length) {
@@ -13,7 +9,6 @@ export const treeYxml = (element, object) => {
                 if (nodeList[i].nodeType === 3) {
                     if (nodeList[i].nodeValue) {
                         object.insert(0, [new Y.XmlText(nodeList[i].nodeValue)])
-                        // object.content.push(nodeList[i].nodeValue);
                     }
                 } else {
                     const nextXmlObject = new Y.XmlElement(nodeList[i].nodeName)

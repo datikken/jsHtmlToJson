@@ -20,4 +20,3 @@ Y.applyUpdate(doc, Y.encodeStateAsUpdate(doc));
 console.log(
     doc.getXmlFragment(docname).toJSON()
 )
-
