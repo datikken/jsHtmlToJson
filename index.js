@@ -1,8 +1,15 @@
 import { DOMParser } from '@xmldom/xmldom';
 import { treeHTML} from "./treeHTML.js";
+import { treeYxml } from "./treeYXmlElement.js";
 import * as Y from 'yjs';
+import {insertYXmlElementToYdoc} from "./helpers.js";
 
 const treeObject = {};
+
+const doc = new Y.Doc();
+const docname = 'test';
+const yxmlfragment = doc.get(docname, Y.XmlFragment);
+const wrapxmlel = new Y.XmlElement('div');
 
 async function HTMLParser(element) {
     return await new Promise((resolve, reject) => {
@@ -21,15 +28,17 @@ async function HTMLParser(element) {
             }
 
             // @ts-expect-error
-            treeHTML(elementToParse, treeObject);
+            // treeHTML(elementToParse, treeObject);
+            treeYxml(elementToParse, wrapxmlel);
 
-            resolve(treeObject);
+            resolve(wrapxmlel);
         } catch (e) {
             reject(e);
         }
     });
 }
 
-const str = "<p>test123</p>";
-const res = await HTMLParser(`<div>${str}</div>`);
-console.log(JSON.stringify(res))
+const str = "<p class='test'>test123<span>spanCont<h1>tEST</h1></span></p>";
+const yXmlElement = await HTMLParser(str);
+const readyDoc = insertYXmlElementToYdoc(yXmlElement)
+console.log(readyDoc.getXmlFragment(docname).toJSON())
