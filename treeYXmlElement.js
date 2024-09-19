@@ -2,13 +2,12 @@ import * as Y from 'yjs';
 
 export const treeYxml = (element, object) => {
     const nodeList = element.childNodes;
-    if (nodeList !== null) {
+    if (nodeList) {
         if (nodeList.length) {
-            // object.content = [];
             for (let i = 0; i < nodeList.length; i++) {
                 if (nodeList[i].nodeType === 3) {
                     if (nodeList[i].nodeValue) {
-                        object.insert(0, [new Y.XmlText(nodeList[i].nodeValue)])
+                        object.insert(object.length + 1, [new Y.XmlText(nodeList[i].nodeValue)])
                     }
                 } else {
                     const nextXmlObject = new Y.XmlElement(nodeList[i].nodeName)
