@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c9f65d6-a99c-4388-b661-71d7f985d420" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/helpers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/treeYXmlElement.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
@@ -46,7 +44,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/datikken/Documents/awesome-docker/src/imperium-crdt-service",
+    "last_opened_file_path": "/home/datikken/Documents/awesome-docker/src/htmlToYjsDoc",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -74,7 +72,8 @@
       <updated>1726663445427</updated>
       <workItem from="1726663447160" duration="9703000" />
       <workItem from="1726676160158" duration="9849000" />
-      <workItem from="1726740513569" duration="5452000" />
+      <workItem from="1726740513569" duration="6097000" />
+      <workItem from="1726750227669" duration="308000" />
     </task>
     <servers />
   </component>
