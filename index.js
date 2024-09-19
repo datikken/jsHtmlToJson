@@ -1,9 +1,10 @@
 import { DOMParser } from '@xmldom/xmldom';
 import { treeHTML} from "./treeHTML.js";
+import * as Y from 'yjs';
 
 const treeObject = {};
 
-async function HTMLParser(element, json) {
+async function HTMLParser(element) {
     return await new Promise((resolve, reject) => {
         try {
             let elementToParse;
@@ -22,14 +23,13 @@ async function HTMLParser(element, json) {
             // @ts-expect-error
             treeHTML(elementToParse, treeObject);
 
-            resolve(json ? JSON.stringify(treeObject) : treeObject);
+            resolve(treeObject);
         } catch (e) {
             reject(e);
         }
     });
 }
 
-const str = "<p>test123<subscription_form test='123'>321</subscription_form></p><h1>test 2</h1>";
-console.log(
-    JSON.stringify(await HTMLParser(`<div>${str}</div>`))
-)
+const str = "<p>test123</p>";
+const res = await HTMLParser(`<div>${str}</div>`);
+console.log(JSON.stringify(res))
