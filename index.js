@@ -29,6 +29,7 @@ async function HTMLParser(element, json) {
     });
 }
 
+const str = "<p>test123<subscription_form test='123'>321</subscription_form></p><h1>test 2</h1>";
 console.log(
-    JSON.stringify(await HTMLParser("<p>test<p>123<subscription_form test='123'>321</subscription_form></p></p>"))
+    JSON.stringify(await HTMLParser(`<div>${str}</div>`))
 )
